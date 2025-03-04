@@ -7,5 +7,9 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss()
   ],
+  base: '/', // Ensure this is set correctly
+  build: {
+    outDir: 'dist', // Ensure Vite builds to 'dist' (default)
+  }
   
 })
